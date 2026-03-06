@@ -48,12 +48,12 @@ function UserTabs() {
       tabBarInactiveTintColor: '#94A3B8',
       tabBarStyle: { paddingBottom: 5, height: 60 },
       tabBarIcon: ({ focused, color }) => {
-        const icons = { Home: '🏠', Loans: '💳', Reviews: '⭐', Profile: '👤' };
+        const icons = { Home: '🏠', MyLoans: '💳', Reviews: '⭐', Profile: '👤' };
         return <Text style={{ fontSize: focused ? 22 : 18 }}>{icons[route.name]}</Text>;
       }
     })}>
       <Tab.Screen name="Home" component={UserDashboard} />
-      <Tab.Screen name="Loans" component={MyLoansScreen} />
+      <Tab.Screen name="MyLoans" component={MyLoansScreen} />
       <Tab.Screen name="Reviews" component={ReviewsScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>

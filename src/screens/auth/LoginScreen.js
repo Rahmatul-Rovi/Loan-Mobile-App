@@ -40,7 +40,7 @@ export default function LoginScreen({ navigation }) {
           <Text style={styles.label}>Email Address</Text>
           <TextInput
             style={styles.input}
-            placeholder="you@example.com"
+            placeholder="Enter Your Email"
             value={email}
             onChangeText={setEmail}
             keyboardType="email-address"
