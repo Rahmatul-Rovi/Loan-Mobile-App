@@ -37,10 +37,10 @@ export default function RegisterScreen({ navigation }) {
 
         <View style={styles.form}>
           {[
-            { label: 'Full Name', key: 'name', placeholder: 'John Doe' },
-            { label: 'Email Address', key: 'email', placeholder: 'you@example.com', keyboard: 'email-address' },
-            { label: 'Phone Number', key: 'phone', placeholder: '01XXXXXXXXX', keyboard: 'phone-pad' },
-            { label: 'Password', key: 'password', placeholder: 'Min 6 characters', secure: true },
+            { label: 'Full Name', key: 'name', placeholder: 'Enter Your Name' },
+            { label: 'Email Address', key: 'email', placeholder: 'Enter Your Email', keyboard: 'email-address' },
+            { label: 'Phone Number', key: 'phone', placeholder: 'Enter Your Mobile Number', keyboard: 'phone-pad' },
+            { label: 'Password', key: 'password', placeholder: 'Enter Your Password', secure: true },
           ].map(field => (
             <View key={field.key}>
               <Text style={styles.label}>{field.label}</Text>
